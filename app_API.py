@@ -1,9 +1,6 @@
-import json
-
 from flask import Flask, request, jsonify
 from DataModels.Product import Product
 from DataModels.User import User
-from Models.Writer import Writer
 from MongoDbManager import MongoDbSingleton
 
 app_api = Flask(__name__)
@@ -37,6 +34,8 @@ def add_product():
         db_manager = MongoDbSingleton.MongoDbSingleton("E_Commerce", "Products")
 
         db_manager.insert(product)
+        MongoDbSingleton.MongoDbSingleton.reinitialize()
+
         return jsonify(), 201
 
     except Exception as e:
@@ -80,50 +79,8 @@ def my_store():
         return jsonify(products_id_list), 200
     except:
         return jsonify(), 500
-#
-#
-# @app_api.route("/my_store", methods = ['POST'])
-# def my_store():
-#     data = request.get_json()
-#     user_id = data["user_id"]
-#     try:
-#         db_manager = MongoDbSingleton.MongoDbSingleton("E_Commerce", "Products")
-#         products = db_manager.find_by_key_value("owner_id", user_id)
-#
-#         return jsonify(products), 200
-#
-#     except:
-#         return jsonify(), 500
-#
-# @app_api.route('/change_password', methods = ['POST'])
-# def change_password():
-#     data = request.get_json()
-#     user_id = data["user_id"]
-#     form = data['form']
-#     old_password = form['old_password']
-#     new_password = form['new_password']
-#     confirm_new_password = form['confirm_new_password']
-#
-#     db_manager = MongoDbSingleton.MongoDbSingleton("E_Commerce", "Users")
-#     dictionary = db_manager.find_one_by_key_value("_id", user_id)
-#     dicy_old_password = dictionary["password"]
-#     if dicy_old_password != old_password:
-#         return jsonify(), 409
-#     else:
-#         error_list = User.valid_password(new_password, confirm_new_password)
-#         if len(error_list) == 0:
-#             try:
-#                 db_manager.update_member(user_id, 'password', new_password)
-#                 return jsonify(), 200
-#             except:
-#                 user = User.from_dict(dictionary)
-#                 user.m_password = new_password
-#                 db_manager.replace_member(user)
-#                 return jsonify(), 200
-#         else:
-#             jsonify(), 409
-
 
 
 if __name__ == "__main__":
     app_api.run(port = 9997, debug = True)
+
