@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b4ba371-445b-4309-b89d-aee6b69f1618" name="Changes" comment="New functions in product_api.">
+    <list default="true" id="9b4ba371-445b-4309-b89d-aee6b69f1618" name="Changes" comment="My store bug is solved. New class for product view.">
+      <change afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/Enums/ProductStatus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Address.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Address.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Owned.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Owned.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/PaymentDetails.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/PaymentDetails.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/PersonalDetails.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/PersonalDetails.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Sale.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Sale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/User.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/Global/Global_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/Global/Global_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_Logger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_Logger/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_MongoDb/MongoDbManager/MongoDbSingleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_MongoDb/MongoDbManager/MongoDbSingleton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_API.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_API.py" afterDir="false" />
     </list>
@@ -35,18 +46,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.MongoDbSingleton.executor": "Debug",
-    "Python.app.executor": "Debug",
-    "Python.app_API.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/User/Projects/Py_Products_API/app_API.py",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.MongoDbSingleton.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.app.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.app_API.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Projects/Py_Products_API/app_API.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python">
       <module name="Py_Products_API" />
@@ -96,12 +107,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1713216387929</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎-00002" summary="My store bug is solved. New class for product view.">
+      <option name="closed" value="true" />
+      <created>1713298427738</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1713298427738</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New functions in product_api." />
-    <option name="LAST_COMMIT_MESSAGE" value="New functions in product_api." />
+    <MESSAGE value="My store bug is solved. New class for product view." />
+    <option name="LAST_COMMIT_MESSAGE" value="My store bug is solved. New class for product view." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -110,16 +130,6 @@
           <url>file://$PROJECT_DIR$/../Py_Logger/Models/Writer.py</url>
           <line>30</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app_API.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/app_API.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
