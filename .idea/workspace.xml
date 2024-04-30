@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b4ba371-445b-4309-b89d-aee6b69f1618" name="Changes" comment="My store bug is solved. New class for product view.">
-      <change afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/Enums/ProductStatus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Address.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Address.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Owned.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Owned.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/PaymentDetails.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/PaymentDetails.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/PersonalDetails.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/PersonalDetails.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Sale.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Sale.py" afterDir="false" />
+    <list default="true" id="9b4ba371-445b-4309-b89d-aee6b69f1618" name="Changes" comment="Search functions well and db and classes were changed and modified successfully.">
+      <change afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/CartProduct.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/User.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/Global/Global_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/Global/Global_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_Logger/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_Logger/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_MongoDb/MongoDbManager/MongoDbSingleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_MongoDb/MongoDbManager/MongoDbSingleton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_API.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_API.py" afterDir="false" />
     </list>
@@ -54,10 +44,15 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Projects/Py_Products_API/app_API.py&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Projects/Py_E_Commerce_Utilities/DataModels&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Projects\Py_E_Commerce_Utilities\DataModels" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python">
       <module name="Py_Products_API" />
@@ -115,13 +110,22 @@
       <option name="project" value="LOCAL‎" />
       <updated>1713298427738</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL‎-00003" summary="Search functions well and db and classes were changed and modified successfully.">
+      <option name="closed" value="true" />
+      <created>1714143756830</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1714143756830</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New functions in product_api." />
     <MESSAGE value="My store bug is solved. New class for product view." />
-    <option name="LAST_COMMIT_MESSAGE" value="My store bug is solved. New class for product view." />
+    <MESSAGE value="Search functions well and db and classes were changed and modified successfully." />
+    <option name="LAST_COMMIT_MESSAGE" value="Search functions well and db and classes were changed and modified successfully." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

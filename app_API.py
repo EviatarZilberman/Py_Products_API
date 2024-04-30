@@ -51,7 +51,7 @@ def add_product():
         return jsonify(), 500
 
 
-@app_api.route("/delete_product", methods = ['POST'])
+@app_api.route("/delete_product", methods = ['DELETE'])
 async def delete_product():
     data = request.get_json()
     product_id = data["product_id"]
@@ -120,6 +120,42 @@ def search_products():
         serialized_products = [product.to_dict() for product in products_list]
 
         return jsonify(serialized_products), 200
+    except Exception as e:
+        Writer(path=path, file_name=log_file).write_log(str(e), level=LogLevel.ERROR)
+        return jsonify(), 500
+
+
+# @app_api.route("/my_cart", methods = ['POST'])
+# def my_cart():
+#     data = request.get_json()
+#     user_id = data["user_id"]
+#     try:
+#         MongoDbSingleton.reinitialize()
+#         user = User.from_dict(MongoDbSingleton("E_Commerce", "User").find_one_by_key_value('_id', user_id))
+#         products_id_list =
+#
+#             db_manager.find_by_key_value("owner_id", user_id)
+#         return jsonify(products_id_list), 200
+#     except Exception as e:
+#         Writer(path=path, file_name=log_file).write_log(str(e), level=LogLevel.ERROR)
+#         return jsonify(), 500
+
+
+@app_api.route("/add_product_to_cart", methods=['POST'])
+def add_product_to_cart():
+    data = request.get_json()
+    user_id = data["user_id"]
+    product_id = data["product_id"]
+    try:
+        MongoDbSingleton.reinitialize()
+        user = User.from_dict(MongoDbSingleton('E_Commerce', 'User').find_one_by_key_value('_id', user_id))
+        if user.cart is None:
+            user.cart = list()
+        user.cart.append(product_id)
+        # MongoDbSingleton('E_Commerce', 'User').update_member(user_id, 'cart', user.cart)
+        MongoDbSingleton('E_Commerce', 'User').replace_member(user)
+        return jsonify(), 200
+
     except Exception as e:
         Writer(path=path, file_name=log_file).write_log(str(e), level=LogLevel.ERROR)
         return jsonify(), 500
