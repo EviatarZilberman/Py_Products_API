@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b4ba371-445b-4309-b89d-aee6b69f1618" name="Changes" comment="search and add to cart function well. problem in the logic of display of the user's cart.">
-      <change afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/ViewModels/ViewCart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/ViewModels/ViewModelMessage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/ViewModels/ViewProduct.py" afterDir="false" />
+    <list default="true" id="9b4ba371-445b-4309-b89d-aee6b69f1618" name="Changes" comment="More security by using cookies.">
+      <change afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/CartDataProduct.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/CartProduct.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/CartProduct.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Product.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/Product.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/User.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/User.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/Enums/CookiesClaims.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_E_Commerce_Utilities/Enums/CookiesClaims.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Py_MongoDb/MongoDbManager/MongoDbSingleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Py_MongoDb/MongoDbManager/MongoDbSingleton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_API.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_API.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +137,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1715290042711</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎-00006" summary="More security by using cookies.">
+      <option name="closed" value="true" />
+      <created>1715508911663</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1715508911663</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,7 +154,8 @@
     <MESSAGE value="Search functions well and db and classes were changed and modified successfully." />
     <MESSAGE value="new functions and class." />
     <MESSAGE value="search and add to cart function well. problem in the logic of display of the user's cart." />
-    <option name="LAST_COMMIT_MESSAGE" value="search and add to cart function well. problem in the logic of display of the user's cart." />
+    <MESSAGE value="More security by using cookies." />
+    <option name="LAST_COMMIT_MESSAGE" value="More security by using cookies." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -168,14 +176,9 @@
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../Py_E_Commerce_Utilities/DataModels/User.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app_API.py</url>
-          <line>168</line>
-          <option name="timeStamp" value="42" />
+          <line>185</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

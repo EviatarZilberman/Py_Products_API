@@ -177,8 +177,19 @@ def my_cart():
         MongoDbSingleton.reinitialize()
         products_list = []
         for item in user.cart:
-            products_list.append(Product.from_dict(MongoDbSingleton('E_Commerce', 'Products').find_by_id(item.product_id)))
-
+            id = item['product_id']
+            dictionary = MongoDbSingleton('E_Commerce', 'Products').find_one_by_key_value('_id', id)
+            product = Product.from_dict(dictionary)
+            quantity = item['quantity']
+            cart_product = None
+            try:
+                cart_product = CartProduct(product, quantity)
+            except Exception as e:
+                print(str(e))
+            try:
+                products_list.append(cart_product.to_dict())
+            except Exception as e:
+                print(str(e))
         return jsonify(products_list), 200
     except Exception as e:
         Writer(path=path, file_name=log_file).write_log(str(e), level=LogLevel.ERROR)
